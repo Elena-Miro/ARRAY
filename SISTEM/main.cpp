@@ -1,4 +1,4 @@
-#include <iostream>  
+п»ї#include <iostream>  
 using namespace std;
 //#define ten
 #define sixteen
@@ -6,13 +6,13 @@ void main()
 {
 	
 	setlocale(LC_ALL, "Russian");
-	char arr[100]; //Для #define sixteen
-	//int arr[10]; //Для #define ten
+	char arr[100]; //Р”Р»СЏ #define sixteen
+	//int arr[10]; //Р”Р»СЏ #define ten
 	int n;
 	int i;
 	
 	
-	cout << "Введите десятичное число: ";
+	cout << "Р’РІРµРґРёС‚Рµ РґРµСЃСЏС‚РёС‡РЅРѕРµ С‡РёСЃР»Рѕ: ";
 	cin >> n;
 #ifdef ten
 	for (i = 0; n > 0; i++)
@@ -20,7 +20,7 @@ void main()
 		arr[i] = n % 2;
 		n = n / 2;
 	}
-	cout << "Двоичное значение равно: ";
+	cout << "Р”РІРѕРёС‡РЅРѕРµ Р·РЅР°С‡РµРЅРёРµ СЂР°РІРЅРѕ: ";
 	for (i = i - 1; i >= 0; i--)
 	{
 		cout << arr[i];
@@ -51,7 +51,7 @@ void main()
 
 		n = n / 16;
 	}
-	cout << "16 значение равно: ";
+	cout << "16 Р·РЅР°С‡РµРЅРёРµ СЂР°РІРЅРѕ: ";
 	for (i = i - 1; i >= 0; i--)
 	{
 		cout << arr[i];
