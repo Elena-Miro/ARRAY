@@ -8,7 +8,7 @@ void main()
 	setlocale(LC_ALL, "Russian");
 	const int SIZE = 3;
 	int arr[SIZE];
-	cout << "Введите значение элементов:\n";
+	cout << "Введите значение элементов("<<SIZE<<"штук):\n";
 	
 	for (int i = 0; i < SIZE; i++)
 	{
@@ -43,14 +43,21 @@ void main()
 	int min = arr[0];
 	int max = arr[0];
 
-	for (int i = 1; i < SIZE; i++)
+	for (int i = 0; i < SIZE; i++)
 	{
-		if (min > arr[i])
+		if (arr[i] < min)
 			min = arr[i];
-		if (max  < arr[i])
-			max  = arr[i];
+		if (arr[i] > max)
+			max = arr[i];
+			
 	 }
 	cout << "Минимальное значение:" <<min<<endl ;
 	cout << "Максимальное значение:" << max << endl;
+
+
+	
+	
+
+
 	
 }
