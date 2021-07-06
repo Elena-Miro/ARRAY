@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
 #define tab "\t"
 //#define LEFT
@@ -8,15 +8,15 @@ void main()
 	setlocale(LC_ALL, "Russian");
 	const int n = 10;
 	int arr[n] = { 1,2,3,4,5,6,7,8,9,10 };
-	//Вывод исходного массива на экран:
+	//Р’С‹РІРѕРґ РёСЃС…РѕРґРЅРѕРіРѕ РјР°СЃСЃРёРІР° РЅР° СЌРєСЂР°РЅ:
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << tab;
 	}
 	cout << endl;
-	//Сдвиг массива влево:
+	//РЎРґРІРёРі РјР°СЃСЃРёРІР° РІР»РµРІРѕ:
 	int number_of_shifts;
-	cout << "Введите количество сдвигов: "; cin>> number_of_shifts;
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРґРІРёРіРѕРІ: "; cin>> number_of_shifts;
 #ifdef LEFT
 
 	for (int i = 0; i < number_of_shifts; i++)
@@ -28,7 +28,7 @@ void main()
 		}
 		arr[n - 1] = buffer;
 	}
-	//Вывод сдвинутого массива на экран:
+	//Р’С‹РІРѕРґ СЃРґРІРёРЅСѓС‚РѕРіРѕ РјР°СЃСЃРёРІР° РЅР° СЌРєСЂР°РЅ:
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << tab;
