@@ -6,8 +6,8 @@ void main()
 {
 	
 	setlocale(LC_ALL, "Russian");
-	char arr[100]; //Для #define sixteen
-	//int arr[10]; //Для #define ten
+	char arr[32]; //Для #define sixteen
+	//int arr[32]; //Для #define ten
 	int n;
 	int i;
 	
