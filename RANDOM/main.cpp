@@ -66,7 +66,7 @@ using namespace std;
 			}
 		
 #endif // RAN3
-#ifdef RAN4
+#ifdef RAN4 //Массив с уникальными случайными числами
 			int arr[10];
 			srand(time(NULL));
 			for (int i = 0; i < 10; i++)
